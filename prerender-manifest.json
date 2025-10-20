@@ -151,6 +151,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/dispositions": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/dispositions",
+      "dataRoute": "/dispositions.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/initial-registration/list": {
       "experimentalBypassFor": [
         {
@@ -262,30 +286,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/medications",
       "dataRoute": "/medications.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/dispositions": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/dispositions",
-      "dataRoute": "/dispositions.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -830,8 +830,8 @@
   },
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "8b468cda9cf28c17ff6001aa4e61e0fc",
-    "previewModeSigningKey": "ff7bf8f9cdae8c50c58cf6a1bb79ec5f7f2ad819d9570fd4f72dd87a91002e2c",
-    "previewModeEncryptionKey": "6c9865d3e6cc875420298c6476093124f302423e6a787f0e730084cbaf09b17a"
+    "previewModeId": "0ec9b428395dc7f661c8f4e5e7de130a",
+    "previewModeSigningKey": "932bdd2ec611ff0d40f7f62c50d93136ecb1290eb142ff742bce03890a4ee98b",
+    "previewModeEncryptionKey": "c5bedad98b1495c5fb276c5a91731ea6a316de9890e5135eeef88166bcb553ed"
   }
 }
