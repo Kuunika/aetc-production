@@ -199,7 +199,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/initial-registration": {
+    "/login": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -212,8 +212,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/initial-registration",
-      "dataRoute": "/initial-registration.rsc",
+      "srcRoute": "/login",
+      "dataRoute": "/login.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -247,7 +247,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/login": {
+    "/initial-registration": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -260,8 +260,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/login",
-      "dataRoute": "/login.rsc",
+      "srcRoute": "/initial-registration",
+      "dataRoute": "/initial-registration.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -286,30 +286,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/medications",
       "dataRoute": "/medications.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -607,6 +583,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/vitals": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/vitals",
+      "dataRoute": "/vitals.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/triage": {
       "experimentalBypassFor": [
         {
@@ -631,7 +631,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/vitals": {
+    "/": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -644,8 +644,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/vitals",
-      "dataRoute": "/vitals.rsc",
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -727,30 +727,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/config/printers": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/config/printers",
-      "dataRoute": "/config/printers.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/config/users/create": {
       "experimentalBypassFor": [
         {
@@ -766,6 +742,30 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/config/users/create",
       "dataRoute": "/config/users/create.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/config/printers": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/config/printers",
+      "dataRoute": "/config/printers.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -830,8 +830,8 @@
   },
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "1050e75ea10c43c44f2ef2deb4f97a29",
-    "previewModeSigningKey": "a1b30c25992cd978717e9200d2ed83054e3e9f922b4c47aecece3126cf6584d2",
-    "previewModeEncryptionKey": "a1dafde8d9d95994f5a8e8b5fb7ad4ca0e5372901708dcdf8116a35e24ec915c"
+    "previewModeId": "57fb2605aa42d2f3f5a2dd75432c09f5",
+    "previewModeSigningKey": "351371d9753488bb513af948f9cadc3a487df72f46df26828373e7629e6a508d",
+    "previewModeEncryptionKey": "a5585e0d2e6b57dbf427b05a0304c4c99b1536cf092869935d2f99b48dcc5c7e"
   }
 }
